@@ -82,7 +82,7 @@ namespace NhlSystemClassLibrary
         public Division Division { get; set; }
 
         // TODO: Define auto-implemented property for players: List<Player> with a private set
-        public List<Player> Players { get; private set; } //= new List<Player>();
+        public List<Player> Players { get; private set; } = new List<Player>();
 
         // TODO: Add method to add a new Player
         // 1) Validate newPlayer is not null
