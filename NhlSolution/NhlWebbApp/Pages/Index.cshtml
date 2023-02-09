@@ -23,8 +23,25 @@
         <input type="text" class="form-control" id="username" name="Username" value="@Model.Username" placeholder="enter your name here">
     </div>
 
-    <!-- TODO 1: add form fields for a number field and a date field -->
-    <!-- TODO 2: add form fields for a select field -->
+    <!-- TODO 1: add form field for a number field-->
+    <div class="mb-3">
+        <label for="username" class="form-label">Your age: </label>
+        <input type="number" min="18" max="75" class="form-control" id="username" name="Username" value="@Model.Age" placeholder="enter your age here">
+    </div>
+
+    <!-- TODO 2: add form field for a select field -->
+    <select class="form-select" aria-label="Select your stream" name="DmitStream" value="@Model.DmitStream">
+        <option>DmitStream</option>
+        <option value="GP" >GameProgramming</option>
+        <option value="WD" >Web Development</option>
+        <option value="CSD" >Computer Software Development</option>
+    </select>
+    <!-- TODO 3: add form field for a radio field for Gender (Male, Female, Other)-->
+    <!-- TODO 4: add form field for a textarea field for a list of friends-->
+    <!-- TODO 5: add form field for a checkbox field for Subscribe-->
+    <!-- TODO 6: add form field for a date for Date of Birth-->
+    <!-- TODO 7: add form field for a range field mood (0 to 100)-->
+    <!-- TODO 8: add form field for email field-->
 
     <button type="submit" class="btn btn-primary">Say Hello</button>
 </form>
